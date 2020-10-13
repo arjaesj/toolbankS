@@ -1,8 +1,11 @@
 import React from "react";
 import { Route, Switch } from 'react-router-dom';
 // import { MDBBtn, MDBCol, MDBContainer, MDBRow } from "mdbreact";
-import './App.css';
 import * as components from "./components";
+// import Home from "./components/Home";
+// import Register from "./components/Register";
+// import LogIn from "./components/Login";
+// import LogOut from "./components/LogOut";
 
 // class App extends Component {
 //   render() {
@@ -21,12 +24,11 @@ import * as components from "./components";
 //   }
 // }
 
-const { Home, Register, LogIn, LogOut, Navigation, PrivateRoute } = components
+const { Home, Register, LogIn, LogOut, PrivateRoute } = components
 
 function App() {
   return (
     <div className="App">
-      <Navigation/>
       <main>
         <Switch>
           <PrivateRoute exact path="/" component={Home}/>
