@@ -16,7 +16,7 @@ function ChangePassword() {
           <MDBCol lg="9">
             <div className="form-group">
               <label
-                htmlFor="formGroupFullNameInput"
+                htmlFor="formGroupPasswordInput"
                 className="font-weight-bold"
               >
                 Current Password
@@ -24,12 +24,12 @@ function ChangePassword() {
               <input
                 type="text"
                 className="form-control form-control-lg"
-                id="formGroupFullNameInput"
+                id="formGroupPasswordInput"
                 placeholder="Type in current password"
               />
               <br />
               <label
-                htmlFor="formGroupAddressInput"
+                htmlFor="formGroupPasswordInput"
                 className="font-weight-bold"
               >
                 New Password
@@ -37,12 +37,12 @@ function ChangePassword() {
               <input
                 type="text"
                 className="form-control form-control-lg"
-                id="formGroupAddressInput"
+                id="formGroupPasswordInput"
                 placeholder="Type in new password"
               />
               <br />
               <label
-                htmlFor="formGroupAddressInput"
+                htmlFor="formGroupPasswordInput"
                 className="font-weight-bold"
               >
                 Confirm new Password
@@ -50,7 +50,7 @@ function ChangePassword() {
               <input
                 type="text"
                 className="form-control form-control-lg"
-                id="formGroupAddressInput"
+                id="formGroupPasswordInput"
                 placeholder="Re-type new password"
               />
             </div>

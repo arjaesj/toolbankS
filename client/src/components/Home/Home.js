@@ -16,8 +16,8 @@ export function Home() {
           alt="ToolBanks Logo"
           className="figure-img img-fluid logo"
         />
-        <MDBBtn className="float-right post-tool" color="dark">
-          Post tool/s
+        <MDBBtn className="float-right post-tool" color="dark" href="/postTool">
+          Post tool
         </MDBBtn>
         <br />
         <div className="input-group md-form form-sm form-1 pl-0">

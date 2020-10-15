@@ -18,7 +18,7 @@ function ChangeEmail() {
           <MDBCol lg="9">
             <div className="form-group">
               <label
-                htmlFor="formGroupFullNameInput"
+                htmlFor="formGroupEmailInput"
                 className="font-weight-bold"
               >
                 Current Email Address
@@ -26,12 +26,12 @@ function ChangeEmail() {
               <input
                 type="text"
                 className="form-control form-control-lg"
-                id="formGroupFullNameInput"
+                id="formGroupEmailInput"
                 placeholder={email}
               />
               <br />
               <label
-                htmlFor="formGroupAddressInput"
+                htmlFor="formGroupEmailInput"
                 className="font-weight-bold"
               >
                 New Email Address
@@ -39,12 +39,12 @@ function ChangeEmail() {
               <input
                 type="text"
                 className="form-control form-control-lg"
-                id="formGroupAddressInput"
+                id="formGroupEmailInput"
                 placeholder="newemail@email.com"
               />
               <br />
               <label
-                htmlFor="formGroupAddressInput"
+                htmlFor="formGroupEmailInput"
                 className="font-weight-bold"
               >
                 Confirm new Email Address
@@ -52,7 +52,7 @@ function ChangeEmail() {
               <input
                 type="text"
                 className="form-control form-control-lg"
-                id="formGroupAddressInput"
+                id="formGroupEmailInput"
                 placeholder="newemail@email.com"
               />
             </div>

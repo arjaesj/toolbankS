@@ -24,8 +24,8 @@ export function MyToolBanks() {
           alt="ToolBanks Logo"
           className="figure-img img-fluid logo"
         />
-        <MDBBtn className="float-right post-tool" color="dark">
-          Post tool/s
+        <MDBBtn className="float-right post-tool" color="dark" href="/postTool">
+          Post tool
         </MDBBtn>
         <br />
         <MDBAnimation type="slideInDown">
