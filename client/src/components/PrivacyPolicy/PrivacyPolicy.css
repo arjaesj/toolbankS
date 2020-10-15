@@ -4,3 +4,9 @@
     margin-top: 170px;
     width: 420px;
 }
+
+@media (max-width: 767px) {
+    .col {
+      width: 100%;
+    }
+  }

@@ -14,7 +14,7 @@ import "./PrivacyPolicy.css";
 export function PrivacyPolicy() {
   return (
     <React.Fragment>
-      <div className="bgheader img-fluid">
+      <header className="bgheader img-fluid">
         <img
           src={require("../../images/Toolbank$-logo.png")}
           alt="ToolBanks Logo"
@@ -29,7 +29,7 @@ export function PrivacyPolicy() {
         <p className="text-center" style={{ fontWeight: "bold", fontSize: 13 }}>
           stuff we don't typically red but please read carefully this time.
         </p>
-      </div>
+      </header>
       <MDBContainer>
         <MDBRow>
           <MDBAnimation type="slideInLeft">

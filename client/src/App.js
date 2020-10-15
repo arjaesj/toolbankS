@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 // import { MDBBtn, MDBCol, MDBContainer, MDBRow } from "mdbreact";
 import * as components from "./components";
 
-const { Home, Register, LogIn, LogOut, PrivateRoute, TnC, PrivacyPolicy } = components
+const { Home, MyToolBanks, Register, LogIn, LogOut, PrivateRoute, TnC, PrivacyPolicy } = components
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
           <Route path="/logout" component={LogOut}/>
           <Route path="/tnc" component={TnC}/>
           <Route path="/privacypolicy" component={PrivacyPolicy}/>
+          <Route path="/myToolbanks" component={MyToolBanks}/>
         </Switch>
       </main>
     </div>

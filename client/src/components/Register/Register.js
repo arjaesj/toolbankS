@@ -3,7 +3,6 @@ import { isAuthenticated } from "../../lib";
 import { Redirect } from "react-router-dom";
 import { MDBRow, MDBCol, MDBBtn, MDBAnimation } from "mdbreact";
 import { Link } from "react-router-dom";
-import "./Register.css";
 
 export function Register(props) {
   const usernameRef = useRef();

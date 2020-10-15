@@ -7,16 +7,13 @@ import {
   MDBCardImage,
   MDBCardText,
   MDBCardBody,
-  MDBAnimation,
   MDBCardGroup,
 } from "mdbreact";
-import "./ToolCard.css";
 
-const ToolCard = () => {
+const ManageToolCard = () => {
   const image = "";
 
   return (
-    <MDBAnimation type="slideInUp">
       <MDBCardGroup deck>
         <MDBCol sm="4">
           <MDBCard>
@@ -32,7 +29,10 @@ const ToolCard = () => {
               <MDBCardTitle tag="h5">Tool name</MDBCardTitle>
               <MDBCardText>Location</MDBCardText>
               <MDBBtn color="black" size="md">
-                View Details
+                Edit Details
+              </MDBBtn>
+              <MDBBtn color="black" size="md">
+                Delete
               </MDBBtn>
             </MDBCardBody>
           </MDBCard>
@@ -52,7 +52,10 @@ const ToolCard = () => {
               <MDBCardTitle tag="h5">Tool name</MDBCardTitle>
               <MDBCardText>Location</MDBCardText>
               <MDBBtn color="black" size="md">
-                View Details
+                Edit Details
+              </MDBBtn>
+              <MDBBtn color="black" size="md">
+                Delete
               </MDBBtn>
             </MDBCardBody>
           </MDBCard>
@@ -72,14 +75,16 @@ const ToolCard = () => {
               <MDBCardTitle tag="h5">Tool name</MDBCardTitle>
               <MDBCardText>Location</MDBCardText>
               <MDBBtn color="black" size="md">
-                View Details
+                Edit Details
+              </MDBBtn>
+              <MDBBtn color="black" size="md">
+                Delete
               </MDBBtn>
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
       </MDBCardGroup>
-    </MDBAnimation>
   );
 };
 
-export default ToolCard;
+export default ManageToolCard;
