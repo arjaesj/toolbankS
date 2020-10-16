@@ -3,12 +3,13 @@ import {
   MDBRow,
   MDBCol,
   MDBMask,
-  MDBBtn,
+  // MDBBtn,
   MDBAnimation,
   MDBJumbotron,
   MDBView,
-  MDBIcon
+  MDBIcon,
 } from "mdbreact";
+import PreviewPostToolModal from "../PreviewPostToolModal/PreviewPostToolModal";
 
 function PostToolInfo() {
   const image = "";
@@ -88,7 +89,7 @@ function PostToolInfo() {
                 htmlFor="exampleFormControlTextarea3"
                 className="font-weight-bold"
               >
-                Descriptiom
+                Description
               </label>
               <textarea
                 type="textarea"
@@ -97,9 +98,7 @@ function PostToolInfo() {
                 placeholder="Provide a detailed description of the tool"
               />
             </div>
-            <MDBBtn color="black" size="lg" className="waves-light ">
-              Post Tool
-            </MDBBtn>
+            <PreviewPostToolModal />
           </MDBCol>
         </MDBRow>
       </MDBJumbotron>

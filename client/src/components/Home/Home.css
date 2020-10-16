@@ -36,10 +36,10 @@ html {
 .input-group {
   height: 40px;
   width: 60%;
-  top: 20%;
+  margin-top: 5%;
   left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
 }
 
 .post-tool {

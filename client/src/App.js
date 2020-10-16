@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch } from 'react-router-dom';
 import * as components from "./components";
 
-const { Register, TnC, PrivacyPolicy, LogIn, LogOut, Home, MyToolBanks, PostTool, PrivateRoute } = components
+const { Register, TnC, PrivacyPolicy, LogIn, LogOut, Home, MyToolBanks, PostTool, RentalForm, PrivateRoute } = components
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
           <Route path="/privacypolicy" component={PrivacyPolicy}/>
           <Route path="/myToolbanks" component={MyToolBanks}/>
           <Route path="/postTool" component={PostTool}/>
+          <Route path="/rentalForm" component={RentalForm}/>
         </Switch>
       </main>
     </div>

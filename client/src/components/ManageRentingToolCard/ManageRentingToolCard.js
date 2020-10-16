@@ -2,13 +2,14 @@ import React from "react";
 import {
   MDBCard,
   MDBCardTitle,
-  MDBBtn,
   MDBCol,
   MDBCardImage,
   MDBCardText,
   MDBCardBody,
   MDBCardGroup,
 } from "mdbreact";
+import  ViewToolModal from '../ViewToolModal/ViewToolModal'
+import ReturnConfirmModal from '../ReturnConfirmModal/ReturnConfirmModal'
 
 const ManageRentingToolCard = () => {
   const image = "";
@@ -28,12 +29,8 @@ const ManageRentingToolCard = () => {
               <p>Price | $ 9.99 /day</p>
               <MDBCardTitle tag="h5">Tool name</MDBCardTitle>
               <MDBCardText>Location</MDBCardText>
-              <MDBBtn color="black" size="md">
-                View Details
-              </MDBBtn>
-              <MDBBtn color="black" size="md">
-                Return
-              </MDBBtn>
+              <ViewToolModal />
+              <ReturnConfirmModal />
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -51,12 +48,8 @@ const ManageRentingToolCard = () => {
               <p>Price | $ 9.99 /day</p>
               <MDBCardTitle tag="h5">Tool name</MDBCardTitle>
               <MDBCardText>Location</MDBCardText>
-              <MDBBtn color="black" size="md">
-                View Details
-              </MDBBtn>
-              <MDBBtn color="black" size="md">
-                Return
-              </MDBBtn>
+              <ViewToolModal />
+              <ReturnConfirmModal />
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -74,12 +67,8 @@ const ManageRentingToolCard = () => {
               <p>Price | $ 9.99 /day</p>
               <MDBCardTitle tag="h5">Tool name</MDBCardTitle>
               <MDBCardText>Location</MDBCardText>
-              <MDBBtn color="black" size="md">
-                View Details
-              </MDBBtn>
-              <MDBBtn color="black" size="md">
-                Return
-              </MDBBtn>
+              <ViewToolModal />
+              <ReturnConfirmModal />
             </MDBCardBody>
           </MDBCard>
         </MDBCol>

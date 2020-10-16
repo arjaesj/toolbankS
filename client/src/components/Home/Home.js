@@ -3,7 +3,7 @@ import Navigation from "../Navigation/Navigation";
 import Footer from "../Footer/Footer";
 import ToolCard from "../ToolCard/ToolCard";
 import DropdownFilter from "../Dropdown/Dropdown";
-import { MDBContainer, MDBIcon, MDBBtn, MDBCol, MDBRow } from "mdbreact";
+import { MDBContainer, MDBIcon, MDBBtn, MDBCol, MDBRow, MDBAnimation } from "mdbreact";
 import "./Home.css";
 
 export function Home() {
@@ -16,10 +16,11 @@ export function Home() {
           alt="ToolBanks Logo"
           className="figure-img img-fluid logo"
         />
-        <MDBBtn className="float-right post-tool" color="dark" href="/postTool">
+        <MDBBtn size="lg" className="float-right post-tool" color="dark" href="/postTool">
           Post tool
         </MDBBtn>
         <br />
+        <MDBAnimation type="slideInDown">
         <div className="input-group md-form form-sm form-1 pl-0">
           <div className="input-group-prepend">
             <span className="input-group-text black lighten-3" id="basic-text1">
@@ -33,6 +34,7 @@ export function Home() {
             aria-label="Search"
           />
         </div>
+        </MDBAnimation>
       </header>
       <MDBRow className="heading">
         <MDBCol sm="3"></MDBCol>

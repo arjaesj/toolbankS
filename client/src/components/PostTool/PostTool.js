@@ -4,7 +4,6 @@ import Footer from "../Footer/Footer";
 import PostToolInfo from "../PostToolInfo/PostToolInfo";
 import {
   MDBContainer,
-  MDBBtn,
   MDBAnimation
 } from "mdbreact";
 import "./PostTool.css";
@@ -20,9 +19,6 @@ export function PostTool() {
           alt="ToolBanks Logo"
           className="figure-img img-fluid logo"
         />
-        <MDBBtn className="float-right post-tool" color="dark">
-          Post tool/s
-        </MDBBtn>
         <br />
         <MDBAnimation type="slideInDown">
           <img

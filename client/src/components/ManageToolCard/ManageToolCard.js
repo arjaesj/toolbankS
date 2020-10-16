@@ -2,15 +2,16 @@ import React from "react";
 import {
   MDBCard,
   MDBCardTitle,
-  MDBBtn,
   MDBCol,
   MDBCardImage,
   MDBCardText,
   MDBCardBody,
   MDBCardGroup,
 } from "mdbreact";
+import EditToolModal from "../EditToolModal/EditToolModal"
+import DeleteConfirmModal from '../DeleteConfirmModal/DeleteConfirmModal'
 
-const ManageToolCard = () => {
+const ManageToolCard = (props) => {
   const image = "";
 
   return (
@@ -28,12 +29,8 @@ const ManageToolCard = () => {
               <p>Price | $ 9.99 /day</p>
               <MDBCardTitle tag="h5">Tool name</MDBCardTitle>
               <MDBCardText>Location</MDBCardText>
-              <MDBBtn color="black" size="md">
-                Edit Details
-              </MDBBtn>
-              <MDBBtn color="black" size="md">
-                Delete
-              </MDBBtn>
+              <EditToolModal />
+              <DeleteConfirmModal />
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -51,12 +48,8 @@ const ManageToolCard = () => {
               <p>Price | $ 9.99 /day</p>
               <MDBCardTitle tag="h5">Tool name</MDBCardTitle>
               <MDBCardText>Location</MDBCardText>
-              <MDBBtn color="black" size="md">
-                Edit Details
-              </MDBBtn>
-              <MDBBtn color="black" size="md">
-                Delete
-              </MDBBtn>
+              <EditToolModal />
+              <DeleteConfirmModal />
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -74,12 +67,8 @@ const ManageToolCard = () => {
               <p>Price | $ 9.99 /day</p>
               <MDBCardTitle tag="h5">Tool name</MDBCardTitle>
               <MDBCardText>Location</MDBCardText>
-              <MDBBtn color="black" size="md">
-                Edit Details
-              </MDBBtn>
-              <MDBBtn color="black" size="md">
-                Delete
-              </MDBBtn>
+              <EditToolModal />
+              <DeleteConfirmModal />
             </MDBCardBody>
           </MDBCard>
         </MDBCol>

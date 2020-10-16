@@ -40,7 +40,7 @@ class Navigation extends React.Component {
           {!this.state.isWideEnough && <MDBNavbarToggler onClick={this.onClickHamburger} />}
             <MDBCollapse isOpen={this.state.collapse} navbar>
               <MDBNavbarNav left>
-                <MDBNavItem active>
+                <MDBNavItem>
                   <MDBNavLink to="/" color="black">
                     <MDBIcon icon="home" size="lg" />
                   </MDBNavLink>

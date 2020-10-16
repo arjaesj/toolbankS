@@ -6,4 +6,5 @@ export { LogOut } from "./LogOut";
 export { Home } from "./Home/Home";
 export { MyToolBanks } from "./MyToolBanks/MyToolBanks";
 export { PostTool } from "./PostTool/PostTool";
+export { RentalForm } from "./RentalForm/RentalForm";
 export { PrivateRoute } from "./PrivateRoute";

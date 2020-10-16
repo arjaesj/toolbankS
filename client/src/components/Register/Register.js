@@ -95,8 +95,8 @@ export function Register(props) {
                   </Link>
                 </p>
                 <br />
-                <p>
-                  By registering, you agree to ToolBank$'
+                <div>
+                  <p>By registering, you agree to ToolBank$'</p>
                   <MDBBtn outline color="back" size="sm" href="/tnc">
                     Terms & Conditions
                   </MDBBtn>
@@ -104,7 +104,7 @@ export function Register(props) {
                   <MDBBtn outline color="back" size="sm" href="/privacypolicy">
                     Privacy Policy
                   </MDBBtn>
-                </p>
+                </div>
               </div>
             </form>
           </MDBAnimation>
