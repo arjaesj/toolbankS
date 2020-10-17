@@ -5,6 +5,7 @@ const toolSchema = new Schema({
   toolName: { type: String, required: true },
   price: { type: String, required: true },
   description: String,
+  imageUrl: String, 
   datePosted: { type: Date, default: Date.now }
 });
 

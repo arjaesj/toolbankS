@@ -42,16 +42,17 @@ class Navigation extends React.Component {
               <MDBNavbarNav left>
                 <MDBNavItem>
                   <MDBNavLink to="/" color="black">
-                    <MDBIcon icon="home" size="lg" />
+                    <MDBIcon icon="home" size="2x" />
                   </MDBNavLink>
                 </MDBNavItem>
               </MDBNavbarNav>
               <MDBNavbarNav right>
                 <MDBNavItem>
-                  <MDBNavLink to="/logout">Logout</MDBNavLink>
+                  <MDBNavLink className="font-weight-bold" to="/logout" style={{fontSize: 20}}>Logout</MDBNavLink>
                 </MDBNavItem>
+                <p>{""}|{""}</p>
                 <MDBNavItem>
-                  <MDBNavLink to="/myToolbanks">{this.state.username}'s My ToolBank$ <MDBIcon icon="user-cog" size="lg" /></MDBNavLink>
+                  <MDBNavLink className="font-weight-bold font-size-lg" to="/myToolbanks" style={{fontSize: 20}}>{this.state.username}'s My ToolBank$ <MDBIcon icon="user-cog" size="lg" /></MDBNavLink>
                 </MDBNavItem>
               </MDBNavbarNav>
             </MDBCollapse>

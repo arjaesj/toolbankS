@@ -48,7 +48,7 @@ class ViewToolModal extends Component {
           <MDBModalHeader toggle={this.toggle(14)} />
           <MDBModalBody>
             <MDBRow>
-              <MDBCol lg="5">
+              <MDBCol lg="3">
                 <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
                   <img
                     className="img-fluid"
@@ -57,7 +57,7 @@ class ViewToolModal extends Component {
                   />
                 </MDBView>
               </MDBCol>
-              <MDBCol lg="7">
+              <MDBCol lg="9">
                 <p>Price | $ 9.99 /day</p>
                 <p>Date Posted | {today.toUTCString()} </p>
                 <h3 className="font-weight-bold mb-3 p-0">
