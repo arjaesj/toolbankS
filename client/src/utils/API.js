@@ -10,10 +10,6 @@ export default {
    getTools: function() {
     return axios.get("/api/tools");
   },
-   // Gets searched tools
-   getSearchedTool: function(query) {
-    return axios.get("/api/tools", { params: { q: query } });
-  },
   // Gets the tool with the given id
   getTool: function(id) {
     return axios.get("/api/tools/" + id);
@@ -24,12 +20,10 @@ export default {
   },
   // Saves a tool to the database
   saveTool: function(toolData) {
-    console.log("toolData: ")
-    console.log(toolData)
     return axios.post("/api/tools", toolData);
   },
-  searchTool: function(toolData){
-    console.log(toolData)
-    return axios.get("/api/tools");
+  searchTool: function(query) {
+    console.log(query)
+    return axios.get("/api/tools", { params: { q: query } });
   }
 };

@@ -60,11 +60,11 @@ const toolSeed = [
     datePosted: new Date(Date.now())
   },
   {
-    toolName: "Electric Drill",
-    userName: "TMNelson",
-    price: "9.99",
-    description: "Brand new, never been used, only one drill bit = #8",
-    imageUrl: "https://toolbanksimages.s3-ap-southeast-2.amazonaws.com/elecDrill.png",
+    toolName: "Long Nose Plier",
+    userName: "IMStark",
+    price: "1.99",
+    description: "Brand new, never been used, 8-inch long nose pliers with cutter used for cutting and grasping or bending small objects; Machined jaws for a slip-resistant grip;",
+    imageUrl: "https://toolbanksimages.s3-ap-southeast-2.amazonaws.com/longnose.png",
     datePosted: new Date(Date.now())
   },
   {

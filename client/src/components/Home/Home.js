@@ -38,12 +38,14 @@ export function Home() {
     setToolSearch(value);
   };
 
-  const handleFormSubmit = (event) => {
+  const handleFormSubmit = event => {
     // When the form is submitted, prevent its default behavior, get tools update the tools state
     event.preventDefault();
-    API.getSearchedTool(toolSearch)
-      .then((res) => setTools(res.data))
-      .catch((err) => console.log(err));
+    API.searchTool(toolSearch)
+      .then(res => {
+        setTools(res.data)
+        console.log("searched tool", res.data)})
+      .catch(err => console.log(err));
   };
 
   return (
@@ -69,7 +71,7 @@ export function Home() {
             <input
               className="form-control my-0 py-1"
               type="text"
-              placeholder="Search"
+              placeholder="Search for a Tool"
               aria-label="Search"
               value={toolSearch}
               onChange={handleInputChange}

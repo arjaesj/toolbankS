@@ -9,21 +9,35 @@ import {
   MDBCol,
   MDBView,
 } from "mdbreact";
-import API from "../../utils/API";
+// import API from "../../utils/API";
 
-const image = "";
-const toolName = "Hammer";
-const address = "Perth, WA";
-const owner = "John Doe";
+const imageUrl = "https://toolbanksimages.s3-ap-southeast-2.amazonaws.com/hammer.png";
+const toolName = "Awesome Hammer";
+const address = "200 Park Ave, New York, NY 10166, United States";
+const owner = "Thor Odinson";
 const ownerEmailAddress = "johndoe@email.com";
 const mailTo = "mailto:" + ownerEmailAddress;
 const timeElapsed = Date.now();
 const today = new Date(timeElapsed);
+const description = "Reliable tool in a very well maintained condition. Don't need to be worthy to weild";
 
 class ViewToolModal extends Component {
-  state = {
-    modal14: false,
-  };
+  constructor(props) {
+    super(props)
+    this.state = {
+      modal14: false,
+      toolName: this.props.toolName,
+      address: this.props.address,
+      owner: this.props.owner,
+      description: this.props.description,
+      imageUrl: this.props.imageUrl
+    };
+  }
+  
+  // state = {
+  //   modal14: false,
+
+  // };
 
   toggle = (nr) => () => {
     let modalNumber = "modal" + nr;
@@ -32,7 +46,7 @@ class ViewToolModal extends Component {
     });
   };
 
-  render() {
+  render(props) {
     return (
       <React.Fragment>
         <MDBBtn size="md" color="black" onClick={this.toggle(14)}>
@@ -53,7 +67,7 @@ class ViewToolModal extends Component {
                 <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
                   <img
                     className="img-fluid"
-                    src={image || "https://via.placeholder.com/340x227"}
+                    src={imageUrl || "https://via.placeholder.com/340x227"}
                     alt=""
                   />
                 </MDBView>
@@ -67,10 +81,7 @@ class ViewToolModal extends Component {
                 <p>{address}</p>
                 <p>Posted by | {owner} </p>
                 <p>
-                  Nam libero tempore, cum soluta nobis est eligendi optio cumque
-                  nihil impedit quo minus id quod maxime placeat facere
-                  possimus, omnis voluptas assumenda est, omnis dolor
-                  repellendus et aut officiis debitis.
+                 {description}
                 </p>
               </MDBCol>
             </MDBRow>
