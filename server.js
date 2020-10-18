@@ -26,7 +26,12 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use("/api", router);
 
-mongoose.connect("mongodb://localhost:27017/passport", {
+// If no API routes are hit, send the React app
+router.use(function(req, res) {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
+
+mongoose.connect("mongodb://localhost:27017/toolbanks", {
     useNewUrlParser:true, 
     useCreateIndex: true
 });

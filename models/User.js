@@ -23,6 +23,7 @@ const UserSchema = new Schema({
     required: "Password is Required",
     validate: [({ length }) => length >= 6, "Password should be longer."],
   },
+  fullName: String,
   address: String,
   imageUrl: String
 });

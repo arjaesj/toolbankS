@@ -9,11 +9,11 @@ const DropdownFilter = () => {
             Filter
         </MDBDropdownToggle>
         <MDBDropdownMenu basic color="white">
-          <MDBDropdownItem>Name (Ascending)</MDBDropdownItem>
-          <MDBDropdownItem>Name (Descending)</MDBDropdownItem>
-          <MDBDropdownItem>Price (Ascending)</MDBDropdownItem>
-          <MDBDropdownItem>Price (Descending)</MDBDropdownItem>
-          <MDBDropdownItem>Closest to you</MDBDropdownItem>
+          <MDBDropdownItem disabled>Name (Ascending)</MDBDropdownItem>
+          <MDBDropdownItem disabled>Name (Descending)</MDBDropdownItem>
+          <MDBDropdownItem disabled>Price (Ascending)</MDBDropdownItem>
+          <MDBDropdownItem disabled>Price (Descending)</MDBDropdownItem>
+          <MDBDropdownItem disabled>Closest to you</MDBDropdownItem>
         </MDBDropdownMenu>
       </MDBDropdown>
     

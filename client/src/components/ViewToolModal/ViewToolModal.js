@@ -9,6 +9,7 @@ import {
   MDBCol,
   MDBView,
 } from "mdbreact";
+import API from "../../utils/API";
 
 const image = "";
 const toolName = "Hammer";

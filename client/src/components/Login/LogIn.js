@@ -53,6 +53,7 @@ export function LogIn(props) {
               id="defaultFormLoginEmailEx"
               placeholder="Username"
               className="form-control"
+              suggested= "current-password"
               pattern=".{2,20}"
               ref={usernameRef}
               required

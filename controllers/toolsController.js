@@ -1,6 +1,6 @@
-const db = require("../models/Tool");
+const db = require("../models");
 
-// Defining methods for the booksController
+// Defining methods for the toolsController
 module.exports = {
   findAll: function(req, res) {
     db.Tool
