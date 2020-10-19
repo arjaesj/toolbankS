@@ -31,7 +31,7 @@ router.use(function(req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/toobanks',
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/toolbanks',
 {
   useNewUrlParser: true,
   useUnifiedTopology: true,
